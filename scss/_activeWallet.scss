@@ -1,0 +1,265 @@
+html {
+    body {
+        .activeWallet {
+            //主區域
+            article {
+                width: 1060px;
+                height: auto;  
+                margin: 0px auto;
+                //選單
+                .activeWallet_mainbox {
+                    display: none;
+                    width: 100%;
+                    height: auto;
+                    padding-top: 10px;
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                    &.display {
+                        display: block;
+                    }
+                    div {
+                        &:last-child {
+                            margin-bottom: 80px;
+                        }
+                    }
+                    .imgBox {
+                        width: 1054px;
+                        height: 305px;
+                        background: url('../images/activeWallet/activeWallet_imgBG.png') no-repeat;
+                        &:nth-of-type(2) {
+                            background-position-y: 50%;
+                        }
+                        &:nth-of-type(3) {
+                            background-position-y: 100%;
+                        }
+                        .contentBox {
+                            width: 300px;
+                            height: 225px;
+                            margin: 45px 20px 0px 0px;
+                            float: right;
+                            h1 {
+                                padding: 0px 0px 10px 0px;
+                                line-height: 28px;
+                                font-size: 22px;
+                            }
+                            p {
+                                color: #fff;
+                                font-size: 16px;
+                                line-height: 22px;
+                                &.date {
+                                    font-size: 14px;
+                                    line-height: 14px;
+                                }
+                            }
+                            .baseline {
+                                width: 100%;
+                                margin: 10px 0px;
+                                background: #b63c59;
+                            }
+                            button {
+                                width: 140px;
+                                height: 60px;
+                                border: solid 5px #620d26;
+                                margin: 10px 8px 0px 0px;
+                                border-radius: 10px;
+                                background: linear-gradient(to top,#ffd64b 0%,#e3a435 18%,#ffc949 35%,#fdf5c7 72%,#ffd64b 100%);
+                                font-size: 16px;
+                                font-weight: bold;
+                                &:last-child {
+                                    margin-right: 0px;
+                                    width: 145px;
+                                }
+                                &:hover,&:active,&.active {
+                                    background: linear-gradient(to top,#1acdbb 0%,#0c9d8e 18%,#1acdbb 35%,#88fff3 72%,#1acdbb 100%);
+                                }
+                            }
+                        }
+                    }
+                    .demoBox {
+                        width: 1046px;
+                        height: 280px;
+                        border: solid 4px #620d26;
+                        border-radius: 40px;
+                        background: linear-gradient(to top,#6c1028 0%,#b72b4d 100%);
+                        box-shadow: 0px 0px 2px 3px #d8486a inset;
+                        .leftImg {
+                            display: inline-block;
+                            width: 675px;
+                            height: 250px;
+                            background: #fff;
+                            border: solid 4px #620d26;
+                            margin: 10px 0px 0px 13px;
+                            border-radius: 25px;
+                            box-shadow: 0px 0px 3px 2px #d64769;
+                        }
+                        .contentBox {
+                            width: 300px;
+                            height: 225px;
+                            margin: 27px 20px 0px 0px;
+                            float: right;
+                            h1 {
+                                padding: 0px 0px 10px 0px;
+                                line-height: 28px;
+                                font-size: 22px;
+                            }
+                            p {
+                                color: #fff;
+                                font-size: 16px;
+                                line-height: 22px;
+                                &.date {
+                                    font-size: 14px;
+                                    line-height: 14px;
+                                }
+                            }
+                            .baseline {
+                                width: 100%;
+                                margin: 10px 0px;
+                                background: #b63c59;
+                            }
+                            button {
+                                width: 140px;
+                                height: 60px;
+                                border: solid 5px #620d26;
+                                margin: 10px 8px 0px 0px;
+                                border-radius: 10px;
+                                background: linear-gradient(to top,#ffd64b 0%,#e3a435 18%,#ffc949 35%,#fdf5c7 72%,#ffd64b 100%);
+                                font-size: 16px;
+                                font-weight: bold;
+                                &:last-child {
+                                    margin-right: 0px;
+                                    width: 145px;
+                                }
+                                &:hover,&:active,&.active {
+                                    background: linear-gradient(to top,#1acdbb 0%,#0c9d8e 18%,#1acdbb 35%,#88fff3 72%,#1acdbb 100%);
+                                }
+                            }
+                        }
+                    }
+                }
+                //內頁
+                .activeWallet_innerpage {
+                    display: none;
+                    position: absolute;
+                    width: 1040px;
+                    height: 940px;
+                    left: 50%;
+                    bottom: 0px;
+                    transform: translateX(-50%);
+                    background: linear-gradient(to top,#6c1028 0%,#b72b4d);
+                    background-color: #a12342;
+                    border-radius: 40px 40px 0px 0px;
+                    border: solid 5px #620d26;
+                    border-bottom-width: 0px;
+                    box-shadow: 0px 0px 5px 2px #ffe0e099 inset;
+                    &.display {
+                        display: block;
+                    }
+                    //banner
+                    .bannerbox {
+                        width: 100%;
+                        height: 275px;
+                        position: relative;
+                        div {
+                            width: 1111px;
+                            height: 309px;
+                            background: url('../images/discount/discount_banner.png') no-repeat;
+                            background-size: 100%;
+                            position: absolute;
+                            left: -35px;
+                            top: -28px;
+                        }
+                    }
+                    //content
+                    .contentBox {
+                        width: calc(100% - 70px);
+                        height: 660px;
+                        padding: 0px 35px;
+                        .title {
+                            width: 535px;
+                            height: 57px;
+                            border-radius: 15px;
+                            background: #620d26;
+                            margin: 0px auto;
+                            line-height: 57px;
+                            font-size: 18px;
+                            font-weight: bold;
+                            color: #fff;
+                            text-align: center;
+                            letter-spacing: 5px;
+                            position: relative;
+                            button {
+                                position: absolute;
+                                width: 142px;
+                                height: 51px;
+                                background: url('../images/word/discount_btnBG.png') no-repeat;
+                                bottom: 3px;
+                                left: -290px;
+                                &:hover {
+                                    animation: discount_btn 0.3s ease-out 0s;
+                                }
+                                &:active,&.active {
+                                    transform: scale(0.9);
+                                }
+                            }
+                        }
+                        .hideBoard {
+                            width: 100%;
+                            height: 480px;
+                            overflow: auto;
+                            h1 {
+                                color: #ccff62;
+                                font-size: 16px;
+                                letter-spacing: 3px;
+                                padding: 40px 0px 5px;
+                            }
+                            p {
+                                color: #fff;
+                                line-height: 26px;
+                                &.lastP {
+                                    padding-top: 30px;
+                                }
+                            }
+                            button {
+                                display: block;
+                                width: 350px;
+                                height: 70px;
+                                border: solid 5px #00453e;
+                                margin: 100px auto 50px;
+                                border-radius: 15px;
+                                background: linear-gradient(to top,#1acdbb 0%,#0c9d8e 18%,#1acdbb 35%,#88fff3 72%,#1acdbb 100%);
+                                font-size: 19px;
+                                font-weight: bold;
+                                position: relative;
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    width: 330px;
+                                    height: 50px;
+                                    background: linear-gradient(to top,transparent,#ffffff60);
+                                    left: 50%;
+                                    top: 5px;
+                                    transform: translateX(-50%);
+                                    border-radius: 10px 10px 0px 0px;
+                                }
+                                &:hover,&:active,&.active {
+                                    &::before {
+                                        background: linear-gradient(to top,transparent,#00000040);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //背景
+            .bg {
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 115px;
+                background: url('../images/discount/discount_bg.png') no-repeat top center;
+                z-index: -999;
+            }
+        }
+    }
+}

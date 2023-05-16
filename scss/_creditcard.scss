@@ -1,0 +1,115 @@
+html {
+    body {
+        .innerPage {
+            article {
+                //中
+                .mid {
+                    &.cardWindow {
+                        //上窗
+                        .topWindow {
+                            width: 870px;
+                            height: 280px;
+                            margin-bottom: 20px;
+                            h1 {
+                                font-size: 22px;
+                                padding: 20px 0px 15px 20px;
+                                p {
+                                    float: right;
+                                    color: #fff;
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    margin: 5px 30px 0px 0px;
+                                }
+                            }
+                            button {
+                                float: left;
+                                width: 234px;
+                                height: 156px;
+                                background: #b5b5b5;
+                                border-radius: 15px;
+                                border: solid 4px #122845;
+                                box-shadow: 0px 2px 0px 0px #828282 inset;
+                                margin: 20px 0px 0px 40px;
+                                &.card1 {
+                                    box-shadow: none;
+                                    border: none;
+                                    background: url('../images/creditcard/creditcard_img.png') no-repeat;
+                                }
+                                &:hover,&:active,&.active {
+                                    border-color: #e51b45;
+                                }
+                                .plus {
+                                    display: block;
+                                    width: 45px;
+                                    height: 43px;
+                                    background: url('../images/creditcard/creditcard_plus.png') no-repeat;
+                                    margin: 0px auto 12px;
+                                }
+                                .word {
+                                    font-size: 12px;
+                                    color: #fff;
+                                    border-radius: 10px;
+                                    background: #e51b45;
+                                    padding: 2px 2px 5px 8px;
+                                }
+                            }
+                        }
+                        //新增卡片窗
+                        .bottomWindow {
+                            width: 870px;
+                            height: 410px;
+                            h1 {
+                                font-size: 21px;
+                                padding: 25px 0px 25px 20px;
+                                letter-spacing: 3px;
+                            }
+                            .inputList {
+                                display: none;
+                                &.display {
+                                    display: block;
+                                }
+                            }
+                            .savebtn {
+                                display: none;
+                                margin: 30px auto 10px;
+                                width: 240px;
+                                height: 58px;
+                                text-shadow: 1px 1px 0px #000;
+                                font-weight: bold;
+                                &.display {
+                                    display: block;
+                                }
+                                &:hover,&:active,&.active {
+                                    /*for IE*/
+                                    @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                        border-color: #f56684;
+                                        background-color: #b5203f;
+                                    }
+                                    /*for IE 9*/
+                                    @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                        border-color: #f56684;
+                                        background-color: #b5203f;
+                                    }
+                                    &::before {
+                                        background: linear-gradient(to top,transparent 50%,#00000052);
+                                    }
+                                }
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    width: 220px;
+                                    height: 40px;
+                                    border-radius: 8px 8px 0px 0px;
+                                    top: 5px;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    background: linear-gradient(to top,transparent 50%,#ffc9e7);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
