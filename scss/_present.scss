@@ -1,0 +1,198 @@
+html {
+    body {
+        .innerPage {
+            article {
+                //中
+                .mid {
+                    &.longBoard {
+                        margin-right: 0px;
+                        width: 1145px;
+                    }
+                    &.presentWindow {
+                        //優惠窗
+                        .topWindow {
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            .separateBox {
+                                width: 1135px;
+                                height: 665px;
+                                position: absolute;
+                                top: 55px;
+                                z-index: 1;
+                                //雙按鈕
+                                .btnbox {
+                                    button {
+                                        &:last-child {
+                                            left: 230px;
+                                            span {
+                                                font-size: 17px;
+                                            }
+                                        }
+                                    }
+                                }
+                                //優惠申請
+                                .presents {
+                                    display: none;
+                                    &.display {
+                                        display: block;
+                                    }
+                                    div {
+                                        width: 1060px;
+                                        height: 580px;
+                                        margin: 35px auto 0px;
+                                    }
+                                }
+                                //特典申請
+                                .goods {
+                                    display: none;
+                                    &.display {
+                                        display: block;
+                                    }
+                                    .selectBox {
+                                        &:nth-of-type(2) {
+                                            margin-top: 15px;
+                                            &::before {
+                                                display: none;
+                                            }
+                                        }
+                                        .savebtn {
+                                            display: inline-block;
+                                            width: 160px;
+                                            height: 49px;
+                                            position: absolute;
+                                            right: -725px;
+                                            top: -3px;
+                                            &:hover,&:active,&.active {
+                                                &::before {
+                                                    background: linear-gradient(to top,transparent 50%,#0000003b);
+                                                }
+                                                /*for IE*/
+                                                @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                                    background-color: #b5203f;
+                                                    border-color: #f56684;
+                                                }
+                                                /*for IE 9*/
+                                                @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                                    background-color: #b5203f;
+                                                    border-color: #f56684;
+                                                }
+                                            }
+                                            &::before {
+                                                content: "";
+                                                position: absolute;
+                                                width: 145px;
+                                                height: 40px;
+                                                left: 50%;
+                                                transform: translateX(-50%);
+                                                top: 3px;
+                                                border-radius: 5px 5px 0px 0px;
+                                                background: linear-gradient(to top,transparent 50%,#ffc9e7);
+                                            }
+                                            span {
+                                                color: #fff;
+                                                text-shadow: 1px 1px 0px #961530;
+                                                position: relative;
+                                                z-index: 1;
+                                                font-size: 17px;
+                                            }
+                                        }
+                                    }
+                                    .baseline {
+                                        width: 94%;
+                                        margin: 30px auto 0px;
+                                    }
+                                    h1 {
+                                        padding: 30px 0px 0px 30px;
+                                    }
+                                    .nameList {
+                                        margin-top: 10px;
+                                        li {
+                                            height: 50px;
+                                            line-height: 50px;
+                                            padding: 0px 95px;
+                                        }
+                                    }
+                                    .innerbox {
+                                        width: 1070px;
+                                        height: 355px;
+                                        table {
+                                            width: 100%;
+                                            height: auto;
+                                            tr {
+                                                text-align: center;
+                                                height: 50px;
+                                                border-bottom: solid 2px #6b9cdd;
+                                                td {
+                                                    vertical-align: middle;
+                                                    color: #fff;
+                                                    font-size: 16px;
+                                                    &:nth-of-type(1) {
+                                                        width: 26%;
+                                                    }
+                                                    &:nth-of-type(2) {
+                                                        width: 18%;
+                                                    }
+                                                    &:nth-of-type(3) {
+                                                        width: 31%;
+                                                    }
+                                                    &:nth-of-type(4) {
+                                                        width: 25%;
+                                                        padding-right: 25px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1415px) {
+    html {
+        body {
+            .innerPage {
+                article {
+                    .mid {
+                        &.longBoard {
+                            width: 880px;
+                            &.presentWindow {
+                                .topWindow {
+                                    .separateBox {
+                                        width: 870px;
+                                        .presents {
+                                            div {
+                                                width: 830px;
+                                            }
+                                        }
+                                        .goods {
+                                            .selectBox {
+                                                .savebtn {
+                                                    right: -390px;
+                                                    top: -60px;
+                                                }
+                                            }
+                                            .nameList {
+                                                li {
+                                                    padding: 0px 75px;
+                                                }
+                                            }
+                                            .innerbox {
+                                                width: 830px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

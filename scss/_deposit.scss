@@ -1,0 +1,146 @@
+html {
+    body {
+        .innerPage {
+            article {
+                //中
+                .mid {
+                    &.depositWindow {
+                        //主窗
+                        .topWindow {
+                            width: 870px;
+                            height: 720px;
+                            border: solid 5px #122845;
+                            border-radius: 15px;
+                            background: linear-gradient(to top,#273f5f 0%,#2a4d7c 100%);
+                            background-color: #2a4d7c;
+                            box-shadow: 0px 2px 3px 0px #a7cdffab inset;
+                            h1 {
+                                color: #ffffac;
+                                font-size: 22px;
+                                font-weight: bold;
+                                padding: 15px 0px 15px 20px;
+                            }
+                            button {
+                                width: 160px;
+                                height: 52px;
+                                margin: 15px 0px 0px 30px;
+                                font-size: 15px;
+                                font-weight: normal;
+                                &:nth-of-type(2) {
+                                    margin-left: 15px;
+                                }
+                            }
+                            .baseline {
+                                margin: 20px auto;
+                            }
+                            .innerbox {
+                                width: 800px;
+                                height: 530px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .jumpbox {
+            .noCard {
+                display: none;
+                position: fixed;
+                width: 482px;
+                height: auto;
+                top: 20%;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 101;
+                text-align: center;
+                &.display {
+                    display: block;
+                }
+                .top {
+                    width: 100%;
+                    height: 100px;
+                    background: url('../images/index/tipBG1.png') no-repeat;
+                    p {
+                        padding: 30px 0px 0px 15px;
+                        color: #783c00;
+                        font-weight: bold;
+                        letter-spacing: 5px;
+                        font-size: 18px;
+                    }
+                }
+                .mid {
+                    width: 100%;
+                    height: auto;
+                    background: url('../images/index/tipBG2.png');
+                    p {
+                        font-size: 16px;
+                        line-height: 20px
+                    };
+                }
+                .bottom {
+                    width: 100%;
+                    height: 137px;
+                    background: url('../images/index/tipBG3.png') no-repeat;
+                    .accbtn {
+                        width: 140px;
+                        height: 46px;
+                        background: #783c00;
+                        border-radius: 10px;
+                        margin-top: 35px;
+                        position: relative;
+                        box-shadow: 0px 4px 0px 2px #512800,0px 0px 0px 2px #512800;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            width: 95%;
+                            height: 30px;
+                            background: #8b4b0b;
+                            left: 50%;
+                            top: 6%;
+                            transform: translateX(-50%);
+                            border-radius: 5px 5px 10px 10px;
+                        }
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 95%;
+                            height: 10px;
+                            background: #a4601b;
+                            left: 50%;
+                            top: 6%;
+                            transform: translateX(-50%);
+                            border-radius: 10px;
+                        }
+                        &:hover,&:active,&.active {
+                            box-shadow: 0px 0px 0px 2px #512800;
+                            margin-top: 39px;
+                        }
+                        span {
+                            display: block;
+                            width: 55px;
+                            height: 25px;
+                            background: url('../images/word/signup_btnword.png') no-repeat;
+                            background-size: 100%;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translateX(-50%) translateY(-50%);
+                            z-index: 2;
+                        }
+                    }
+                }
+                .cancelbtn {
+                    width: 41px;
+                    height: 40px;
+                    background: url('../images/index/xx.png') no-repeat;
+                    position: absolute;
+                    top: -30px;
+                    right: -30px;
+                    &:hover,&:active,&.acitve {
+                        animation: noacc_cancelbtn 0.8s linear 0s;
+                    }
+                }
+            }
+        }
+    }
+}

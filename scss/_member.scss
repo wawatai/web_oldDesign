@@ -1,0 +1,300 @@
+html {
+    body {
+        .innerPage {
+            article {
+                //中
+                .mid {
+                    &.memberWindow {
+                        //上窗
+                        .topWindow {
+                            width: 870px;
+                            height: 240px;
+                            margin-bottom: 20px;
+                            h1 {
+                                font-size: 22px;
+                            }
+                            .innerbox {
+                                width: 790px;
+                                height: 130px;
+                                padding: 20px;
+                                p {
+                                    color: #fff;
+                                    letter-spacing: 3px;
+                                    font-size: 13px;
+                                    &:nth-of-type(2) {
+                                        margin-top: 15px;
+                                    }
+                                    span {
+                                        display: inline-block;
+                                        width: 18px;
+                                        height: 22px;
+                                        background: linear-gradient(to top,#a2a2a2,#ffffff);
+                                        background-color: #a2a2a2;
+                                        color: #000;
+                                        text-align: center;
+                                        transform: translateY(2px);
+                                        line-height: 22px;
+                                        padding-left: 3px;
+                                        font-size: 15px;
+                                        border: solid 2px #fff;
+                                        border-bottom-width: 1px;
+                                        border-radius: 5px;
+                                        font-weight: bold;
+                                        margin: 0px 5px;
+                                        box-shadow: 0px 2px 0px 0px #00000075 inset, 0px 2px 0px 0px #7f7f7f, 0px 0px 0px 1px #000, 0px 2px 0px 1px #000;
+                                        &:nth-of-type(1) {
+                                            margin-left: 8px;
+                                        }
+                                        &.active {
+                                            background: linear-gradient(to top,#a00f00,#ff0000);
+                                            background-color: #ff0000;
+                                            color: #fff;
+                                        }
+                                        &.active2 {
+                                            background: linear-gradient(to top,#9da000,#d0ff00);
+                                            background-color: #d0ff00;
+                                        }
+                                        &.active3 {
+                                            background: linear-gradient(to top,#00a043,#2bff00);
+                                            background-color: #2bff00;
+                                        } 
+                                    }
+                                }
+                                ul {
+                                    li {
+                                        display: inline-block;
+                                        color: #fff;
+                                        margin-right: 35px;
+                                        &:nth-of-type(2) {
+                                            span {
+                                                background-position-x: -40px;
+                                            }
+                                        }
+                                        &:nth-of-type(3) {
+                                            span {
+                                                background-position-x: -80px;
+                                            }
+                                        }
+                                        &:nth-of-type(4) {
+                                            span {
+                                                background-position-x: -120px;
+                                            }
+                                        }
+                                        &.active {
+                                            color: #ffee5b;
+                                            span {
+                                                background-position-y: 100%;
+                                            }
+                                        }
+                                        span {
+                                            display: inline-block;
+                                            width: 40px;
+                                            height: 40px;
+                                            background: url('../images/member/member_ic.png') no-repeat;
+                                            margin: 24px 15px -13px 0px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        //下窗
+                        .bottomWindow {
+                            width: 880px;
+                            height: 460px;
+                            position: relative;
+                            .separateBox {
+                                width: 870px;
+                                height: 395px;
+                                position: absolute;
+                                top: 55px;
+                                z-index: 1;
+                                //雙按鈕
+                                .btnbox {
+                                    button {
+                                        &:last-child {
+                                            left: 230px;
+                                            span {
+                                                font-size: 14px;
+                                                color: #fff;
+                                                letter-spacing: 0px;
+                                            }
+                                        }
+                                    }
+                                }
+                                h1 {
+                                    font-size: 21px;
+                                    padding: 25px 0px 25px 20px;
+                                }
+                                //基本情報
+                                .infor {
+                                    display: none;
+                                    &.display {
+                                        display: block;
+                                    }
+                                    .flowWindow {
+                                        overflow-x: hidden;
+                                        overflow-y: auto;
+                                        height: 300px;
+                                        scrollbar-width: thin;
+                                        .inputList {
+                                            li {
+                                                button {
+                                                    position: absolute;
+                                                    width: 75px;
+                                                    height: 43px;
+                                                    top: 0px;
+                                                    right: -83px;
+                                                }
+                                            }
+                                        }
+                                        .savebtn {
+                                            margin: 30px auto 10px;
+                                            width: 240px;
+                                            height: 58px;
+                                            &:hover,&:active,&.active {
+                                                /*for IE*/
+                                                @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                                    border-color: #f56684;
+                                                    background-color: #b5203f;
+                                                }
+                                                /*for IE 9*/
+                                                @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                                    border-color: #f56684;
+                                                    background-color: #b5203f;
+                                                }
+                                                &::before {
+                                                    background: linear-gradient(to top,transparent 50%,#00000052);
+                                                }
+                                            }
+                                            &::before {
+                                                content: "";
+                                                position: absolute;
+                                                left: 50%;
+                                                transform: translateX(-50%);
+                                                background: linear-gradient(to top,transparent 50%,#ffc9e7);
+                                                width: 220px;
+                                                height: 40px;
+                                                border-radius: 8px 8px 0px 0px;
+                                                top: 5px;
+                                            }
+                                        }
+                                        p {
+                                            text-align: center;
+                                            color: #fff;
+                                            font-size: 15px;
+                                            a {
+                                                color: #ff5994;
+                                            }
+                                        }
+                                        .baseline {
+                                            margin: 40px auto 0px;
+                                        }
+                                        .inputbox {
+                                            font-size: 14px;
+                                            color: #fff;
+                                            margin: 10px 0px 0px 40px;
+                                            /*for IE*/
+                                            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                                margin-bottom: 50px;
+                                            }
+                                            /*for IE 9*/
+                                            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                                margin-bottom: 50px;
+                                            }
+                                            input {
+                                                background: #183051;
+                                                width: 190px;
+                                                height: 42px;
+                                                padding-left: 10px;
+                                                font-size: 17px;
+                                                border-radius: 10px;
+                                                border: solid 1px #fff;
+                                                color: #fff;
+                                                margin-left: 15px;
+                                                &.lightbase {
+                                                    background: #507ab0;
+                                                    box-shadow: 0px 3px 0px 0px #0000005e inset;
+                                                }
+                                            }
+                                            button {
+                                                display: inline-block;
+                                                width: 75px;
+                                                height: 43px;
+                                                margin-left: 5px;
+                                                transform: translateY(-1px);
+                                                /*for IE*/
+                                                @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                                    line-height: 0px;
+                                                }
+                                                /*for IE 9*/
+                                                @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                                    line-height: 0px;
+                                                }
+                                                &:hover,&:active,&.active {
+                                                    background: #b5203f;
+                                                    border-color: #ed5676;
+                                                    text-shadow: none;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .account {
+                                    display: none;
+                                    &.display {
+                                        display: block;
+                                    }
+                                    .innerbox {
+                                        width: 830px;
+                                        height: 305px;
+                                        table {
+                                            width: 100%;
+                                            height: auto;
+                                            tr {
+                                                text-align: center;
+                                                border-bottom: solid 2px #6b9cdd;
+                                                td {
+                                                    color: #fff;
+                                                    font-size: 16px;
+                                                    height: 40px;
+                                                    line-height: 40px;
+                                                    vertical-align: middle;
+                                                    &:nth-of-type(1) {
+                                                        width: 15%;
+                                                    }
+                                                    &:nth-of-type(2) {
+                                                        width: 18%;
+                                                    }
+                                                    &:nth-of-type(3) {
+                                                        width: 20%;
+                                                    }
+                                                    &:nth-of-type(4) {
+                                                        width: 14%;
+                                                    }
+                                                    &:nth-of-type(5) {
+                                                        width: 13%;
+                                                    }
+                                                    &:nth-of-type(6) {
+                                                        width: 20%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .nameList {
+                                        margin-top: 10px;
+                                        li {
+                                            height: 50px;
+                                            line-height: 50px;
+                                            padding: 0px 25px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
